@@ -1,23 +1,23 @@
-/* Dark Theme Base */
+/* Dark Theme Base with Custom Color Palette */
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background: #1b1b1b; /* dark background */
-    color: #eaeaea;      /* light text */
+    background: #012030; /* Dark blue background */
+    color: #DAFDBA; /* Light green text */
     margin: 0;
     padding: 20px;
 }
 
-/* Container at 80% width */
+/* Main Container (80% width, centered) */
 .container {
     width: 80%;
     max-width: 1200px;
     margin: 40px auto;
 }
 
-/* Card Structure */
+/* Card Structure for Sections */
 .card {
-    background: #2b2b2b; /* slightly lighter than background for contrast */
+    background: #012030; /* Use same dark blue for consistency */
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -32,55 +32,60 @@ body {
     margin-top: 20px;
 }
 
-/* Each Grid Item (Card or Section) */
+/* Each Grid Item */
 .grid-item {
-    background: #2b2b2b; 
+    background: #012030; 
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .grid-item:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* Headers */
 h1, h2, h3 {
     margin-top: 0;
-    color: #ffcc00; /* a bright accent color */
 }
 
 h1 {
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 10px;
+    background: linear-gradient(90deg, #9AEBA3, #DAFDBA); /* Gradient using light greens */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2 {
     font-size: 1.8em;
     margin-bottom: 15px;
-    border-bottom: 2px solid #ffcc00;
+    border-bottom: 2px solid #9AEBA3;
     padding-bottom: 5px;
+    color: #DAFDBA;
 }
 
 h3 {
     font-size: 1.4em;
     margin-bottom: 10px;
-    color: #ffd966; /* slightly lighter accent */
+    color: #9AEBA3;
 }
 
-/* Subtitle & Credit text */
-.subtitle {
-    color: #ccc;
+/* Subtitle & Credit */
+.subtitle, .credit {
     text-align: center;
+}
+
+.subtitle {
+    color: #9AEBA3;
     font-size: 1.1em;
     margin-bottom: 5px;
 }
 .credit {
-    color: #999;
-    text-align: center;
+    color: #45C4B0;
     font-size: 0.9em;
     margin-bottom: 20px;
 }
@@ -103,46 +108,65 @@ ul li {
 }
 
 ul li::before {
-    content: \"\\2022\";
-    color: #ffd966;
+    content: "\\2022"; /* Bullet point */
+    color: #9AEBA3;
     position: absolute;
     left: 0;
 }
 
 /* Links */
 a {
-    color: #ffd966;
+    color: #9AEBA3;
     text-decoration: none;
+    font-weight: 600;
     transition: color 0.2s;
 }
 a:hover {
-    color: #ffa500;
+    color: #45C4B0;
     text-decoration: underline;
 }
 
 /* Code Blocks */
 code {
     background: #333;
-    color: #ffd966;
+    color: #DAFDBA;
     padding: 4px 8px;
     border-radius: 4px;
     font-family: 'Source Code Pro', monospace;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background: #45C4B0;
+    color: #012030;
+    padding: 12px 25px;
+    margin: 15px 10px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
 }
 
 /* Footer */
 footer {
     text-align: center;
     margin-top: 40px;
-    color: #999;
+    color: #45C4B0;
     font-size: 0.9em;
 }
 
-/* Responsive Adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
     }
-
     h1 {
         font-size: 2em;
     }
