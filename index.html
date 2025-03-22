@@ -1,81 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Data Roadmap</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Data Roadmap</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Gamified AI-Enhanced Learning Roadmap</h1>
-        <p class="subtitle">A 12-Week Plan to Master Python, SQL, Data Analysis, and Machine Learning</p>
-        <p class="credit">Created with help from ChatGPT, freeCodeCamp, Habitica, and other free tools</p>
-    </header>
-    <main>
-        <section id="overview">
-            <h2>Overview</h2>
-            <div class="card">
-                <h3>Your Situation</h3>
-                <ul>
-                    <li><strong>Background:</strong> Basic HTML, CSS, some JavaScript</li>
-                    <li><strong>Time Commitment:</strong> 3–4 hours on weekdays</li>
-                    <li><strong>Learning Style:</strong> Needs interactive, gamified, and engaging content</li>
-                    <li><strong>Goal:</strong> Become job-ready in AI, Data Science, and Analytics</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Plan Highlights</h3>
-                <ul>
-                    <li>Break learning into fun, manageable “quests”</li>
-                    <li>Use interactive elements (quizzes, progress bars, badges)</li>
-                    <li>Incorporate AI tools like <a href="https://chat.openai.com/">ChatGPT</a> and <a href="https://openai.com/dall-e-2/">DALL·E</a></li>
-                </ul>
-            </div>
-        </section>
-        <section id="roadmap">
-            <h2>The 12-Week Roadmap</h2>
-            <article class="quest">
-                <h3>Week 1–4: Python Fundamentals Quest</h3>
-                <p>Learn Python syntax, control structures, and functions.</p>
-                <ul>
-                    <li>Complete <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/">freeCodeCamp’s Python curriculum</a></li>
-                    <li>Practice with <a href="https://www.kaggle.com/learn/python">Kaggle’s Python Micro-Course</a></li>
-                    <li>Earn your “Python Initiate” badge on <a href="https://codecombat.com/">CodeCombat</a></li>
-                </ul>
-            </article>
-            <article class="quest">
-                <h3>Week 2–5: SQL Basics Quest</h3>
-                <p>Understand databases and SQL syntax.</p>
-                <ul>
-                    <li>Work through <a href="https://sqlzoo.net/wiki/SQL_Tutorial">SQLZoo</a></li>
-                    <li>Use <a href="https://www.w3schools.com/sql/">W3Schools SQL Tutorial</a></li>
-                    <li>Complete a short project on <a href="https://mode.com/sql-tutorial/">Mode Analytics</a></li>
-                </ul>
-            </article>
-            <article class="quest">
-                <h3>Week 5–8: Data Analysis with Python Quest</h3>
-                <p>Work with pandas, NumPy, and Matplotlib.</p>
-                <ul>
-                    <li>Take <a href="https://www.freecodecamp.org/learn/data-analysis-with-python/">freeCodeCamp’s Data Analysis with Python course</a></li>
-                    <li>Explore <a href="https://www.kaggle.com/learn/pandas">Kaggle’s Pandas Micro-Course</a></li>
-                    <li>Analyze datasets from <a href="https://www.kaggle.com/datasets">Kaggle</a></li>
-                </ul>
-            </article>
-        </section>
-        <section id="final-project">
-            <h2>Week 10–12: Capstone Project</h2>
-            <p>Build a portfolio project to showcase your skills.</p>
-            <ul>
-                <li><strong>Data Analysis:</strong> Analyze public datasets and create visualizations</li>
-                <li><strong>ML Project:</strong> Train a simple classifier or regression model</li>
-                <li><strong>Interactive Dashboard:</strong> Use <a href="https://datastudio.google.com/">Google Data Studio</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>Convert your roadmap to HTML using Pandoc: <code>pandoc roadmap.md -o roadmap.html –css=style.css</code></p>
-    </footer>
+  <header>
+    <h1>Gamified AI-Enhanced Learning Roadmap</h1>
+    <p class="subtitle">A 12-Week Plan to Master Python, SQL, Data Analysis, and Machine Learning</p>
+    <p class="credit">Created with help from ChatGPT, freeCodeCamp, Habitica, and other free tools</p>
+  </header>
+
+  <main class="container">
+    <!-- Overview Section -->
+    <section id="overview" class="card">
+      <h2>Overview</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h3>Your Situation</h3>
+          <ul>
+            <li><strong>Background:</strong> Basic HTML, CSS, some JavaScript</li>
+            <li><strong>Time Commitment:</strong> 3–4 hours on weekdays</li>
+            <li><strong>Learning Style:</strong> Interactive, gamified, and engaging content</li>
+            <li><strong>Goal:</strong> Job‑ready in AI, Data Science, and Analytics</li>
+          </ul>
+        </div>
+        <div class="grid-item">
+          <h3>Plan Highlights</h3>
+          <ul>
+            <li>Fun, manageable "quests"</li>
+            <li>Interactive elements (quizzes, progress bars, badges)</li>
+            <li>Incorporate AI tools like <a href="https://chat.openai.com/">ChatGPT</a> & <a href="https://openai.com/dall-e-2/">DALL·E</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="card">
+      <h2>The 12-Week Roadmap</h2>
+
+      <!-- Python & SQL Quests -->
+      <article class="quest grid-container">
+        <div class="grid-item">
+          <h3>Week 1–4: Python Fundamentals Quest</h3>
+          <p>Learn Python syntax, control structures, and functions.</p>
+          <ul>
+            <li><a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/">freeCodeCamp’s Python curriculum</a></li>
+            <li><a href="https://www.kaggle.com/learn/python">Kaggle’s Python Micro-Course</a></li>
+            <li>"Python Initiate" badge via <a href="https://codecombat.com/">CodeCombat</a></li>
+          </ul>
+        </div>
+        <div class="grid-item">
+          <h3>Week 2–5: SQL Basics Quest</h3>
+          <p>Understand databases & SQL syntax.</p>
+          <ul>
+            <li><a href="https://sqlzoo.net/wiki/SQL_Tutorial">SQLZoo</a> for practice</li>
+            <li><a href="https://www.w3schools.com/sql/">W3Schools SQL</a> tutorials</li>
+            <li>"Query Master" badge after <a href="https://mode.com/sql-tutorial/">Mode Analytics</a> project</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Data Analysis & ML Quests -->
+      <article class="quest grid-container">
+        <div class="grid-item">
+          <h3>Week 5–8: Data Analysis Quest</h3>
+          <p>Work with pandas, NumPy, Matplotlib/Plotly.</p>
+          <ul>
+            <li><a href="https://www.freecodecamp.org/learn/data-analysis-with-python/">Data Analysis with Python</a></li>
+            <li><a href="https://www.kaggle.com/learn/pandas">Kaggle’s Pandas Micro-Course</a></li>
+            <li>"Data Wrangler" badge for mini-project on Kaggle dataset</li>
+          </ul>
+        </div>
+        <div class="grid-item">
+          <h3>Week 8–10: Intro to ML Quest</h3>
+          <p>Learn ML basics & build simple models.</p>
+          <ul>
+            <li><a href="https://developers.google.com/machine-learning/crash-course">Google’s ML Crash Course</a></li>
+            <li><a href="https://www.kaggle.com/learn/intro-to-machine-learning">Kaggle’s ML Micro-Course</a></li>
+            <li>"ML Apprentice" badge after scikit-learn project</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- Capstone Section -->
+    <section id="capstone" class="card">
+      <h2>Week 10–12: Capstone Project</h2>
+      <p>Showcase your integrated skills.</p>
+      <ul>
+        <li><strong>Data Analysis:</strong> Analyze a public dataset & visualize results</li>
+        <li><strong>ML Project:</strong> Basic classifier/regressor on GitHub</li>
+        <li><strong>Dashboard:</strong> Use <a href="https://public.tableau.com/">Tableau Public</a> or <a href="https://datastudio.google.com/">Google Data Studio</a></li>
+      </ul>
+    </section>
+
+    <!-- Extras -->
+    <section id="extras" class="card">
+      <h2>Enhancing Engagement</h2>
+      <ul>
+        <li><strong>Visual Roadmap:</strong> Use <a href="https://www.canva.com">Canva</a> for timelines & icons</li>
+        <li><strong>Interactive Links:</strong> Insert quizzes, progress bars</li>
+        <li><strong>Gamified Tracking:</strong> <a href="https://habitica.com/">Habitica</a> or <a href="https://www.bitdegree.org/">BitDegree Missions</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Convert your roadmap using Pandoc: <code>pandoc roadmap.md -o index.html --css=style.css</code></p>
+  </footer>
 </body>
 </html>
