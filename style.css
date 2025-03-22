@@ -1,111 +1,52 @@
 /* Base Styling */
 body {
-    font-family: 'Roboto', sans-serif;  /* Modern, clean font similar to Khan Academy */
+    font-family: 'Montserrat', sans-serif;  /* Modern sans-serif font */
     line-height: 1.6;
-    background: linear-gradient(135deg, #2a5298, #1e3c72); /* Deep blue gradient inspired by BitDegree */
-    color: #f5f5f5;
+    background: #f9f9f9;  /* Clean light background */
+    color: #333;
     padding: 20px;
     margin: 0;
 }
 
-/* Container faor Content */
+/* Container for Content */
 .container {
     max-width: 900px;
     margin: 40px auto;
-    background: rgba(255, 255, 255, 0.05);
+    background: #fff;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* Headings */
 h1 {
-    color: #ffd700; /* Gold-ish for a lively accent like Duolingo */
+    color: #2a2a2a;
     font-size: 3em;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    /* Subtle gradient effect */
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2 {
-    color: #ffa500; /* A warm orange, inspired by Udemy and Coursera accents */
+    color: #2a2a2a;
     font-size: 2.2em;
     margin-top: 30px;
     margin-bottom: 15px;
+    text-align: left;
+    border-bottom: 2px solid #ff7e5f;
+    padding-bottom: 5px;
 }
 
 /* Paragraphs */
 p {
-    font-size: 1.1em;
+    font-size: 1.125em;
     margin-bottom: 15px;
     text-align: justify;
 }
 
 /* Links */
 a {
-    color: #ffd700;
-    text-decoration: none;
-    border-bottom: 1px dashed #ffd700;
-    transition: color 0.3s ease, border-bottom-color 0.3s ease;
-}
-
-a:hover {
-    color: #ffa500;
-    border-bottom-color: #ffa500;
-}
-
-/* Code Blocks */
-code {
-    background: #333;
-    color: #ffd700;
-    padding: 4px 8px;
-    border-radius: 4px;
-}
-
-/* Lists */
-ul {
-    text-align: left;
-    padding-left: 20px;
-    margin-bottom: 15px;
-}
-
-ul li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-}
-
-ul li::before {
-    content: "• ";
-    color: #ffd700;
-}
-
-/* Buttons */
-.button {
-    display: inline-block;
-    background: #ffd700;
-    color: #1e1e1e;
-    padding: 12px 25px;
-    margin: 15px 10px;
-    border-radius: 8px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: background 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-.button:hover {
-    background: #ffa500;
-    transform: scale(1.05);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5em;
-    }
-    h2 {
-        font-size: 1.8em;
-    }
-    .container {
-        padding: 20px;
-    }
-}
+    color
